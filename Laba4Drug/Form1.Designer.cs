@@ -196,6 +196,7 @@ namespace Laba4Drug
             this.dataGridView1.GridColor = System.Drawing.Color.PeachPuff;
             this.dataGridView1.Location = new System.Drawing.Point(57, 127);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersVisible = false;
             this.dataGridView1.Size = new System.Drawing.Size(144, 376);
             this.dataGridView1.TabIndex = 8;
             // 
@@ -229,6 +230,7 @@ namespace Laba4Drug
             this.button1.TabIndex = 11;
             this.button1.Text = "Ввести";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // vrem1
             // 
