@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "laba4-332110",
+  "private_key_id": "1ebf8c6441c14292578d9ef9c6312cf8848d2ec6",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDKvxTtAJOR/PBA\nd3Xab8CYvTEt4pKqH0yVXAbl5gGSTOFhYLrLdN0ImMBLyUelMCyAYLgM3W+CgvHR\nplxMrNaIij/SRLPWRFafEOoLcGwUFYPatu1sszusGLUrmRvzpVTdPfiMk7zCPdG1\n+ZqEgQEKn3MauY7oUsGPBWHK6Sgrpom6ivV4p4GdQbLAUp82WjOtIFIu1KrLWGAR\ndvof8Mlk9ABEy+4WYVmixUSEfSTbku+Ndb2FYGTgNfXjoT+gWTU1KuJKHtJkdnjV\nufxhsKzf3Im1w3jNbns35+22mgCSXf/Poe2/ByjAGvlmxL+0ks1gx/bM4JjLXxtW\n0ov+8SzNAgMBAAECggEAAxDnhlutSkvOr07kgZ3nMKLLI67q5GHjn4OcLW2wcDpe\nPdcqY/7GWUWuwhv5tnoMxjvlifju9tniQcx4ALHWxGBWLZNxO8gzSNBcQGQzbOH+\nvo09zcMadSm3fatg/0Asu8l0NjNawKjngGQVWIkh5KZQ0DfmUnBD8eoqgS4honf+\nnn2DnRa32hXxCGtjQb01UwZ80dxLkbkdKvD6Ox9b0Uyn2lnCbjK/lJX33ofMz8cd\nsXyDGYJy5dSMA7vMu4TKnHNILZ00OFRUn24Y71RbXG9B5zDHVq9+L7/xPMTrIHvD\n1po8aCT5NpeDEJKvDr6+O52J6ie9REJs2WkCnEstCQKBgQDwb0PbiMMlabJtUKQs\nyCDCzLfpkxeP2iXkFbmLyC88T2MXCmNOJ/CX5kgS8s4PI4yWTGq985YlFRTTMM5z\n6YATEqSjbPzv+r52U4XG8PfZDyMS9ZaQpNLpVeBf+Mazmkh+ac9kZOsNTL7STT26\nWQTEgQhJFw673rKWAestITgqlQKBgQDX3zVAZc7OoygteLMSi7kXRWjxl2HmONm+\nB7arr33OF788s5ajQdkEjO1aFHiEGhHOu+uzK7RnSOp1WQDeW+XSPDXLQcWa+8az\nzzqi+tE7Grgg0FDCq712T5pWeXxHgWZsA6tmtKeKp6E1WVmnrS/jiu8BPiR/RLSs\nHqHApDgjWQKBgQDECjTN/4j+LFxrfWEfkl4D91/Ndz2y8TAL9RrAuoypJCGrW7D0\nvOQTNpR1vrv85ANxWQV/s+ksey/rstPi9vSSmJTdG7RxB4XcfOWK/FdaCFmUz+Hg\nNkQyNO8p0XJSZu3NBQEw3og44+aDGq/GDWcxwfO7hK1iyYXbgdz7gyaEsQKBgQCJ\nMaeTVOC5fQIE3CfayogInSlUGWSzvz/LQPW8aVzoBTmZ53z+JtQ4yyPx0v7A3hyh\nKddjWIxf8/xmNfmSWA9YrMF3e0aN+CPRlQtsF0GwcYvB9wLMpf9UWMT63ly4ySmB\nzlc5f+jW+zA+SpnrMes0jtDVFlx1sgGtPg6I8xVmiQKBgQDNrqufD6w2i/ZYSExH\n+5P/Is3Nx9suEqiX37KdCZXBbG+YH3WUosSOjdjun5rQSFMX6NgWPyR5g/sYY56v\nGTOju/3AGLwr978pFdvcjUS7IoGA1j8XY9DqTewpQfSv8LHWY1Ybu9SFiVVMr2px\nvaksqhEvMiyiCq4nKbPbxerY1g==\n-----END PRIVATE KEY-----\n",
+  "client_email": "alicedrugova@laba4-332110.iam.gserviceaccount.com",
+  "client_id": "112443316459105676802",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/alicedrugova%40laba4-332110.iam.gserviceaccount.com"
+}

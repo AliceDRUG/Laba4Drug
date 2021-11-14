@@ -29,21 +29,22 @@ namespace Laba4Drug
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend6 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend7 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend8 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea9 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend9 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea10 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend10 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            this.components = new System.ComponentModel.Container();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend2 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend5 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.очиститьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.закрытьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -62,16 +63,27 @@ namespace Laba4Drug
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.vrem1 = new System.Windows.Forms.Label();
+            this.vrem11 = new System.Windows.Forms.Label();
+            this.vrem111 = new System.Windows.Forms.Label();
             this.vrem2 = new System.Windows.Forms.Label();
-            this.vrem3 = new System.Windows.Forms.Label();
-            this.vrem4 = new System.Windows.Forms.Label();
-            this.vrem5 = new System.Windows.Forms.Label();
+            this.vrem22 = new System.Windows.Forms.Label();
             this.chart1 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart2 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart3 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart4 = new System.Windows.Forms.DataVisualization.Charting.Chart();
             this.chart5 = new System.Windows.Forms.DataVisualization.Charting.Chart();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.vrem222 = new System.Windows.Forms.Label();
+            this.vrem3 = new System.Windows.Forms.Label();
+            this.vrem33 = new System.Windows.Forms.Label();
+            this.vrem333 = new System.Windows.Forms.Label();
+            this.vrem4 = new System.Windows.Forms.Label();
+            this.vrem44 = new System.Windows.Forms.Label();
+            this.vrem444 = new System.Windows.Forms.Label();
+            this.vrem5 = new System.Windows.Forms.Label();
+            this.vrem55 = new System.Windows.Forms.Label();
+            this.vrem555 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chart1)).BeginInit();
@@ -112,12 +124,14 @@ namespace Laba4Drug
             this.googleToolStripMenuItem.Name = "googleToolStripMenuItem";
             this.googleToolStripMenuItem.Size = new System.Drawing.Size(57, 20);
             this.googleToolStripMenuItem.Text = "Google";
+            this.googleToolStripMenuItem.Click += new System.EventHandler(this.googleToolStripMenuItem_Click);
             // 
             // excelToolStripMenuItem
             // 
             this.excelToolStripMenuItem.Name = "excelToolStripMenuItem";
             this.excelToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.excelToolStripMenuItem.Text = "Excel";
+            this.excelToolStripMenuItem.Click += new System.EventHandler(this.excelToolStripMenuItem_Click);
             // 
             // StartButton
             // 
@@ -131,7 +145,7 @@ namespace Laba4Drug
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(547, 406);
+            this.StopButton.Location = new System.Drawing.Point(547, 430);
             this.StopButton.Name = "StopButton";
             this.StopButton.Size = new System.Drawing.Size(290, 60);
             this.StopButton.TabIndex = 2;
@@ -141,7 +155,7 @@ namespace Laba4Drug
             // bubbleBox
             // 
             this.bubbleBox.AutoSize = true;
-            this.bubbleBox.Location = new System.Drawing.Point(310, 39);
+            this.bubbleBox.Location = new System.Drawing.Point(310, 40);
             this.bubbleBox.Name = "bubbleBox";
             this.bubbleBox.Size = new System.Drawing.Size(157, 17);
             this.bubbleBox.TabIndex = 3;
@@ -229,155 +243,252 @@ namespace Laba4Drug
             this.button1.TabIndex = 11;
             this.button1.Text = "Ввести";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // vrem1
             // 
             this.vrem1.AutoSize = true;
-            this.vrem1.Location = new System.Drawing.Point(388, 264);
+            this.vrem1.Location = new System.Drawing.Point(307, 264);
             this.vrem1.Name = "vrem1";
             this.vrem1.Size = new System.Drawing.Size(35, 13);
             this.vrem1.TabIndex = 14;
             this.vrem1.Text = "label2";
+            this.vrem1.Click += new System.EventHandler(this.vrem1_Click);
+            // 
+            // vrem11
+            // 
+            this.vrem11.AutoSize = true;
+            this.vrem11.Location = new System.Drawing.Point(371, 264);
+            this.vrem11.Name = "vrem11";
+            this.vrem11.Size = new System.Drawing.Size(35, 13);
+            this.vrem11.TabIndex = 15;
+            this.vrem11.Text = "label2";
+            // 
+            // vrem111
+            // 
+            this.vrem111.AutoSize = true;
+            this.vrem111.Location = new System.Drawing.Point(432, 264);
+            this.vrem111.Name = "vrem111";
+            this.vrem111.Size = new System.Drawing.Size(35, 13);
+            this.vrem111.TabIndex = 16;
+            this.vrem111.Text = "label3";
             // 
             // vrem2
             // 
             this.vrem2.AutoSize = true;
-            this.vrem2.Location = new System.Drawing.Point(672, 264);
+            this.vrem2.Location = new System.Drawing.Point(619, 264);
             this.vrem2.Name = "vrem2";
             this.vrem2.Size = new System.Drawing.Size(35, 13);
-            this.vrem2.TabIndex = 15;
-            this.vrem2.Text = "label2";
+            this.vrem2.TabIndex = 17;
+            this.vrem2.Text = "label4";
             // 
-            // vrem3
+            // vrem22
             // 
-            this.vrem3.AutoSize = true;
-            this.vrem3.Location = new System.Drawing.Point(989, 264);
-            this.vrem3.Name = "vrem3";
-            this.vrem3.Size = new System.Drawing.Size(35, 13);
-            this.vrem3.TabIndex = 16;
-            this.vrem3.Text = "label3";
-            // 
-            // vrem4
-            // 
-            this.vrem4.AutoSize = true;
-            this.vrem4.Location = new System.Drawing.Point(388, 506);
-            this.vrem4.Name = "vrem4";
-            this.vrem4.Size = new System.Drawing.Size(35, 13);
-            this.vrem4.TabIndex = 17;
-            this.vrem4.Text = "label4";
-            // 
-            // vrem5
-            // 
-            this.vrem5.AutoSize = true;
-            this.vrem5.Location = new System.Drawing.Point(989, 506);
-            this.vrem5.Name = "vrem5";
-            this.vrem5.Size = new System.Drawing.Size(35, 13);
-            this.vrem5.TabIndex = 21;
-            this.vrem5.Text = "label5";
+            this.vrem22.AutoSize = true;
+            this.vrem22.Location = new System.Drawing.Point(679, 264);
+            this.vrem22.Name = "vrem22";
+            this.vrem22.Size = new System.Drawing.Size(35, 13);
+            this.vrem22.TabIndex = 21;
+            this.vrem22.Text = "label5";
             // 
             // chart1
             // 
-            chartArea6.Name = "ChartArea1";
-            this.chart1.ChartAreas.Add(chartArea6);
-            legend6.Name = "Legend1";
-            this.chart1.Legends.Add(legend6);
-            this.chart1.Location = new System.Drawing.Point(251, 62);
+            chartArea1.Name = "ChartArea1";
+            this.chart1.ChartAreas.Add(chartArea1);
+            legend1.Name = "Legend1";
+            this.chart1.Legends.Add(legend1);
+            this.chart1.Location = new System.Drawing.Point(241, 62);
             this.chart1.Name = "chart1";
-            series6.ChartArea = "ChartArea1";
-            series6.Legend = "Legend1";
-            series6.Name = "Series1";
-            this.chart1.Series.Add(series6);
-            this.chart1.Size = new System.Drawing.Size(290, 187);
+            series1.ChartArea = "ChartArea1";
+            series1.Legend = "Legend1";
+            series1.Name = "Series1";
+            this.chart1.Series.Add(series1);
+            this.chart1.Size = new System.Drawing.Size(300, 187);
             this.chart1.TabIndex = 22;
             this.chart1.Text = "chart1";
             // 
             // chart2
             // 
-            chartArea7.Name = "ChartArea1";
-            this.chart2.ChartAreas.Add(chartArea7);
-            legend7.Name = "Legend1";
-            this.chart2.Legends.Add(legend7);
+            chartArea2.Name = "ChartArea1";
+            this.chart2.ChartAreas.Add(chartArea2);
+            legend2.Name = "Legend1";
+            this.chart2.Legends.Add(legend2);
             this.chart2.Location = new System.Drawing.Point(547, 62);
             this.chart2.Name = "chart2";
-            series7.ChartArea = "ChartArea1";
-            series7.Legend = "Legend1";
-            series7.Name = "Series1";
-            this.chart2.Series.Add(series7);
+            series2.ChartArea = "ChartArea1";
+            series2.Legend = "Legend1";
+            series2.Name = "Series1";
+            this.chart2.Series.Add(series2);
             this.chart2.Size = new System.Drawing.Size(290, 187);
             this.chart2.TabIndex = 23;
             this.chart2.Text = "chart2";
             // 
             // chart3
             // 
-            chartArea8.Name = "ChartArea1";
-            this.chart3.ChartAreas.Add(chartArea8);
-            legend8.Name = "Legend1";
-            this.chart3.Legends.Add(legend8);
+            chartArea3.Name = "ChartArea1";
+            this.chart3.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chart3.Legends.Add(legend3);
             this.chart3.Location = new System.Drawing.Point(843, 62);
             this.chart3.Name = "chart3";
-            series8.ChartArea = "ChartArea1";
-            series8.Legend = "Legend1";
-            series8.Name = "Series1";
-            this.chart3.Series.Add(series8);
+            series3.ChartArea = "ChartArea1";
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chart3.Series.Add(series3);
             this.chart3.Size = new System.Drawing.Size(290, 187);
             this.chart3.TabIndex = 24;
             this.chart3.Text = "chart3";
             // 
             // chart4
             // 
-            chartArea9.Name = "ChartArea1";
-            this.chart4.ChartAreas.Add(chartArea9);
-            legend9.Name = "Legend1";
-            this.chart4.Legends.Add(legend9);
+            chartArea4.Name = "ChartArea1";
+            this.chart4.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chart4.Legends.Add(legend4);
             this.chart4.Location = new System.Drawing.Point(251, 303);
             this.chart4.Name = "chart4";
-            series9.ChartArea = "ChartArea1";
-            series9.Legend = "Legend1";
-            series9.Name = "Series1";
-            this.chart4.Series.Add(series9);
+            series4.ChartArea = "ChartArea1";
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chart4.Series.Add(series4);
             this.chart4.Size = new System.Drawing.Size(290, 187);
             this.chart4.TabIndex = 25;
             this.chart4.Text = "chart4";
             // 
             // chart5
             // 
-            chartArea10.Name = "ChartArea1";
-            this.chart5.ChartAreas.Add(chartArea10);
-            legend10.Name = "Legend1";
-            this.chart5.Legends.Add(legend10);
+            chartArea5.Name = "ChartArea1";
+            this.chart5.ChartAreas.Add(chartArea5);
+            legend5.Name = "Legend1";
+            this.chart5.Legends.Add(legend5);
             this.chart5.Location = new System.Drawing.Point(843, 303);
             this.chart5.Name = "chart5";
-            series10.ChartArea = "ChartArea1";
-            series10.Legend = "Legend1";
-            series10.Name = "Series1";
-            this.chart5.Series.Add(series10);
+            series5.ChartArea = "ChartArea1";
+            series5.Legend = "Legend1";
+            series5.Name = "Series1";
+            this.chart5.Series.Add(series5);
             this.chart5.Size = new System.Drawing.Size(290, 187);
             this.chart5.TabIndex = 26;
             this.chart5.Text = "chart5";
             // 
-            // textBox2
+            // openFileDialog1
             // 
-            this.textBox2.Location = new System.Drawing.Point(103, 509);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(61, 20);
-            this.textBox2.TabIndex = 27;
-            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
+            this.openFileDialog1.FileName = "openFileDialog1";
+            // 
+            // vrem222
+            // 
+            this.vrem222.AutoSize = true;
+            this.vrem222.Location = new System.Drawing.Point(731, 264);
+            this.vrem222.Name = "vrem222";
+            this.vrem222.Size = new System.Drawing.Size(35, 13);
+            this.vrem222.TabIndex = 27;
+            this.vrem222.Text = "label2";
+            // 
+            // vrem3
+            // 
+            this.vrem3.AutoSize = true;
+            this.vrem3.Location = new System.Drawing.Point(917, 264);
+            this.vrem3.Name = "vrem3";
+            this.vrem3.Size = new System.Drawing.Size(35, 13);
+            this.vrem3.TabIndex = 28;
+            this.vrem3.Text = "label2";
+            // 
+            // vrem33
+            // 
+            this.vrem33.AutoSize = true;
+            this.vrem33.Location = new System.Drawing.Point(973, 264);
+            this.vrem33.Name = "vrem33";
+            this.vrem33.Size = new System.Drawing.Size(35, 13);
+            this.vrem33.TabIndex = 29;
+            this.vrem33.Text = "label3";
+            // 
+            // vrem333
+            // 
+            this.vrem333.AutoSize = true;
+            this.vrem333.Location = new System.Drawing.Point(1028, 264);
+            this.vrem333.Name = "vrem333";
+            this.vrem333.Size = new System.Drawing.Size(35, 13);
+            this.vrem333.TabIndex = 30;
+            this.vrem333.Text = "label4";
+            // 
+            // vrem4
+            // 
+            this.vrem4.AutoSize = true;
+            this.vrem4.Location = new System.Drawing.Point(307, 504);
+            this.vrem4.Name = "vrem4";
+            this.vrem4.Size = new System.Drawing.Size(35, 13);
+            this.vrem4.TabIndex = 31;
+            this.vrem4.Text = "label2";
+            // 
+            // vrem44
+            // 
+            this.vrem44.AutoSize = true;
+            this.vrem44.Location = new System.Drawing.Point(371, 504);
+            this.vrem44.Name = "vrem44";
+            this.vrem44.Size = new System.Drawing.Size(35, 13);
+            this.vrem44.TabIndex = 32;
+            this.vrem44.Text = "label3";
+            // 
+            // vrem444
+            // 
+            this.vrem444.AutoSize = true;
+            this.vrem444.Location = new System.Drawing.Point(432, 504);
+            this.vrem444.Name = "vrem444";
+            this.vrem444.Size = new System.Drawing.Size(35, 13);
+            this.vrem444.TabIndex = 33;
+            this.vrem444.Text = "label4";
+            // 
+            // vrem5
+            // 
+            this.vrem5.AutoSize = true;
+            this.vrem5.Location = new System.Drawing.Point(917, 504);
+            this.vrem5.Name = "vrem5";
+            this.vrem5.Size = new System.Drawing.Size(35, 13);
+            this.vrem5.TabIndex = 34;
+            this.vrem5.Text = "label2";
+            // 
+            // vrem55
+            // 
+            this.vrem55.AutoSize = true;
+            this.vrem55.Location = new System.Drawing.Point(973, 504);
+            this.vrem55.Name = "vrem55";
+            this.vrem55.Size = new System.Drawing.Size(35, 13);
+            this.vrem55.TabIndex = 35;
+            this.vrem55.Text = "label3";
+            // 
+            // vrem555
+            // 
+            this.vrem555.AutoSize = true;
+            this.vrem555.Location = new System.Drawing.Point(1028, 504);
+            this.vrem555.Name = "vrem555";
+            this.vrem555.Size = new System.Drawing.Size(35, 13);
+            this.vrem555.TabIndex = 36;
+            this.vrem555.Text = "label4";
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1140, 551);
-            this.Controls.Add(this.textBox2);
+            this.Controls.Add(this.vrem555);
+            this.Controls.Add(this.vrem55);
+            this.Controls.Add(this.vrem5);
+            this.Controls.Add(this.vrem444);
+            this.Controls.Add(this.vrem44);
+            this.Controls.Add(this.vrem4);
+            this.Controls.Add(this.vrem333);
+            this.Controls.Add(this.vrem33);
+            this.Controls.Add(this.vrem3);
+            this.Controls.Add(this.vrem222);
             this.Controls.Add(this.chart5);
             this.Controls.Add(this.chart4);
             this.Controls.Add(this.chart3);
             this.Controls.Add(this.chart2);
             this.Controls.Add(this.chart1);
-            this.Controls.Add(this.vrem5);
-            this.Controls.Add(this.vrem4);
-            this.Controls.Add(this.vrem3);
+            this.Controls.Add(this.vrem22);
             this.Controls.Add(this.vrem2);
+            this.Controls.Add(this.vrem111);
+            this.Controls.Add(this.vrem11);
             this.Controls.Add(this.vrem1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label1);
@@ -428,16 +539,27 @@ namespace Laba4Drug
         private System.Windows.Forms.ToolStripMenuItem excelToolStripMenuItem;
         private System.Windows.Forms.Label vrem1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
+        private System.Windows.Forms.Label vrem11;
+        private System.Windows.Forms.Label vrem111;
         private System.Windows.Forms.Label vrem2;
-        private System.Windows.Forms.Label vrem3;
-        private System.Windows.Forms.Label vrem4;
-        private System.Windows.Forms.Label vrem5;
+        private System.Windows.Forms.Label vrem22;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart1;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart2;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart3;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart4;
         private System.Windows.Forms.DataVisualization.Charting.Chart chart5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label vrem222;
+        private System.Windows.Forms.Label vrem3;
+        private System.Windows.Forms.Label vrem33;
+        private System.Windows.Forms.Label vrem333;
+        private System.Windows.Forms.Label vrem4;
+        private System.Windows.Forms.Label vrem44;
+        private System.Windows.Forms.Label vrem444;
+        private System.Windows.Forms.Label vrem5;
+        private System.Windows.Forms.Label vrem55;
+        private System.Windows.Forms.Label vrem555;
     }
 }
 
