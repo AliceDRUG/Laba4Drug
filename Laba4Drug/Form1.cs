@@ -13,49 +13,63 @@ using Application = Microsoft.Office.Interop.Excel.Application;
 using System.IO;
 using Google.Apis.Services;
 using Google.Apis.Auth.OAuth2;
-using Action = System.Action;
-using System.Threading;
-using System.Diagnostics;
 
 namespace Laba4Drug
 {
     public partial class Form1 : Form
     {
         public int[] startArray;
+        int m, s;
         public Form1()
         {
             InitializeComponent();
         }
-        private async void FactorialAsync()
-        {
-            await Task.Run(() =>  startArray = BubbleSort(startArray));                // выполняется асинхронно
-        }
         private void button1_Click(object sender, EventArgs e)
         {
+            m = 0;
+            s = 0;
+            
+
+            oneMin.Text = "0";
+            oneSec.Text = "00";
+            twoMin.Text = "0";
+            twoSec.Text = "00";
+            thirdMin.Text = "0";
+            thirdSec.Text = "00";
+            fourMin.Text = "0";
+            fourSec.Text = "00";
+            fiveMin.Text = "0";
+            fiveSec.Text = "00";
+
             if (bubbleBox.Checked == true)
             {
-/*                int[] bubbleArray = BubbleSort(startArray);*/
-                FactorialAsync();
+                timer1.Start();
+                int[] bubbleArray = BubbleSort(startArray);
+                timer1.Stop();
             }
             if (vstavBox.Checked == true)
             {
+                timer2.Start();
                 int[] vstavArray = InsertionSort(startArray);
-                chart2.Series[0].Points.DataBindXY(null, vstavArray);
+                timer2.Stop();
             }
             if (shakeBox.Checked == true)
             {
+                timer3.Start();
                 int[] shakeArray = ShakerSort(startArray);
-                chart3.Series[0].Points.DataBindXY(null, shakeArray);
+                timer3.Stop();
             }
             if (fastBox.Checked == true)
             {
+                timer4.Start();
                 int[] fastArray = QuickSort(startArray);
-                chart4.Series[0].Points.DataBindXY(null, fastArray);
+                timer4.Stop();
             }
             if (bogoBox.Checked == true)
             {
+                timer5.Start();
                 int[] bogoArray = BogoSort(startArray);
-                chart5.Series[0].Points.DataBindXY(null, bogoArray);
+                timer5.Stop();
             }
         }
         private void Form1_Load(object sender, EventArgs e)
@@ -83,23 +97,13 @@ namespace Laba4Drug
             for (int j = 0; j < m; j++)
             {
                 dataGridView1.Rows.Add();
-                startArray[j] = rnd.Next(100);
+                startArray[j] = rnd.Next(1, 1000);
                 dataGridView1[0, j].Value = startArray[j];   
             }
         }
         //Пузырьковая сортировка
         private int[] BubbleSort(int[] array)
         {
-            for (int i = 0; i < startArray.Count(); i++)
-            {
-                Action action2 = () => chart1.Series[0].Points.Add(startArray[i]);
-                Invoke(action2);
-            }
-            Action action6 = () => chart1.Update();
-            Invoke(action6);
-
-            Stopwatch sw = new Stopwatch();
-            sw.Start();
             for (int i = 1; i < array.Length; i++)
             {
                 for (int j = 0; j < array.Length - 1; j++)
@@ -109,22 +113,12 @@ namespace Laba4Drug
                         int n = array[j];
                         array[j] = array[j + 1];
                         array[j + 1] = n;
-
-                        Action action3 = () => chart1.Series[0].Points.Clear();
-                        Invoke(action3);
-                        for (int k = 0; k < startArray.Count(); k++) 
-                        { 
-                            Action action4 = () => chart1.Series[0].Points.Add(startArray[k]); 
-                            Invoke(action4); 
-                        }
-                        Thread.Sleep(50);
                     }
+                    chart1.Series[0].Points.DataBindXY(null, array);
+                    chart1.Update();
                 }
             }
-            sw.Stop();
-            double aaa = sw.ElapsedMilliseconds / 1000;
-            Action action5 = () => vrem1.Text = aaa.ToString();
-            Invoke(action5);
+
             return array;
         }
         //Быстрая сортировка
@@ -143,6 +137,8 @@ namespace Laba4Drug
                 {
                     index++;
                     Swap(ref array[index], ref array[i]);
+                    chart4.Series[0].Points.DataBindXY(null, array);
+                    chart4.Update();
                 }
             }
             index++;
@@ -173,6 +169,8 @@ namespace Laba4Drug
                 {
                     Swap(ref array[j - 1], ref array[j]);
                     j--;
+                    chart2.Series[0].Points.DataBindXY(null, array);
+                    chart2.Update();
                 }
 
                 array[j] = key;
@@ -201,6 +199,8 @@ namespace Laba4Drug
                     {
                         Swap(ref array[j - 1], ref array[j]);
                         swapFlag = true;
+                        chart3.Series[0].Points.DataBindXY(null, array);
+                        chart3.Update();
                     }
                 }
                 //если обменов не было выходим
@@ -242,6 +242,8 @@ namespace Laba4Drug
             while (!IsSorted(array))
             {
                 array = RandomPermutation(array);
+                chart5.Series[0].Points.DataBindXY(null, array);
+                chart5.Update();
             }
             return array;
         }
@@ -322,17 +324,106 @@ namespace Laba4Drug
 
                 baza.Add($"{pern1}");
                 dataGridView1.Rows.Clear();
+                int index = 0;
+                startArray = new int[baza.Count]; 
 
                 foreach (string s in baza)
                 {
                     var result = s.Split(';');
+                    startArray[index] = Convert.ToInt32(result[0]);
                     dataGridView1.Rows.Add(result[0]);
+                    index++;
                 }
             }
         }
         private async void googleToolStripMenuItem_Click(object sender, EventArgs e)
         {
             await readAsy();
+        }
+
+        private void StopButton_Click(object sender, EventArgs e)
+        {
+            timer1.Enabled = false;
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Interval = 500;
+            if (vrem11.Visible || label3.Visible || label6.Visible || label9.Visible || label12.Visible)
+            {
+                if (s < 59)
+                {
+                    s++;
+                    if (s < 10)
+                    {
+                        oneSec.Text = "0" + s.ToString();
+                        twoSec.Text = "0" + s.ToString();
+                        thirdSec.Text = "0" + s.ToString();
+                        fourSec.Text = "0" + s.ToString();
+                        fiveSec.Text = "0" + s.ToString();
+                    }
+                    else
+                    {
+                        oneSec.Text = s.ToString();
+                        twoSec.Text = s.ToString();
+                        thirdSec.Text = s.ToString();
+                        fourSec.Text = s.ToString();
+                        fiveSec.Text = s.ToString();
+                    }
+                }
+                else
+                {
+                    if (m < 59)
+                    {
+                        m++;
+                        if (m < 10)
+                        {
+                            oneMin.Text = m.ToString();
+                            twoMin.Text = m.ToString();
+                            thirdMin.Text = m.ToString();
+                            fourMin.Text = m.ToString();
+                            fiveMin.Text = m.ToString();
+                        }
+                        else
+                        {
+                            oneMin.Text = m.ToString();
+                            twoMin.Text = m.ToString();
+                            thirdMin.Text = m.ToString();
+                            fourMin.Text = m.ToString();
+                            fiveMin.Text = m.ToString();
+                        }
+                        s = 0;
+                        oneSec.Text = "00";
+                        twoSec.Text = "00";
+                        thirdSec.Text = "00";
+                        fourSec.Text = "00";
+                        fiveSec.Text = "00";
+                    }
+                    else
+                    {
+                        m = 0;
+                        oneMin.Text = "0";
+                        twoMin.Text = "0";
+                        thirdMin.Text = "0";
+                        fourMin.Text = "0";
+                        fiveMin.Text = "0";
+                    }
+                }
+                vrem11.Visible = false;
+                label3.Visible = false;
+                label6.Visible = false;
+                label9.Visible = false;
+                label12.Visible = false;
+            }
+            else
+            {
+                vrem11.Visible = true;
+                label3.Visible = true;
+                label6.Visible = true;
+                label9.Visible = true;
+                label12.Visible = true;
+            }
+
         }
 
         private void vrem1_Click(object sender, EventArgs e)
